@@ -1,3 +1,5 @@
+const { deepEqual } = require('assert');
+const { assert } = require('console');
 var should = require('should'), 
     fs = require('fs'),
     request = require('request');
@@ -46,7 +48,9 @@ describe('UF Directory Server Unit Tests', function() {
           In the second, assert what we should  see.
           Finally, call "done();" to move on to the next test.
         */
-         
+        assert(error, 'Error not recieved.');
+        assert(response, 'Response not recieved');
+        done();
       });
     });
   });
@@ -54,16 +58,17 @@ describe('UF Directory Server Unit Tests', function() {
 
 	// In these tests, we will be checking more specific content using object and primitive comparisons that have specific values.
   describe('Server provides listing data as JSON on proper request', function() {
-    it('responds correctly to a GET request to "/listings"', function(done) {
+    it('responds correctly to a (GET request to "/listings"', function(done) {
       request.get('http://localhost:8080/listings', function(error, response, body) {
       	
       	// First let's assert that the body being passed by the get request actually exists or not with our general assertions, similar to the previous test:
-       	
+       	assert(body, 'body not exist');
 
 			// Next, use deepEquals() for object level comparison. We want to assert that the "listings" JSON provided by the get request is the same as the JSON file provided by the test (bodyData)
 			// Finally, call "done();" to move onto the next test
         	bodyData = JSON.parse(body);
-        	
+          deepEqual(bodyData,listings);
+          done();
       });
     });
 
@@ -71,12 +76,12 @@ describe('UF Directory Server Unit Tests', function() {
     it('responds with a 404 error to other GET requests', function(done) {
       request.get('http://localhost:8080/pizza', function(error, response, body) {
       	// First, assert that the status code is what it's supposed to be (exactly 404) if the listing were missing.
-        
+        assert(error, '404 message not recieved');
         
         // For the last assertion, check that the string output is the same message server.js outputs when a listing is missing:
         // Finally, call "done();" to finish!
-        
-
+       deepEqual(body, "404, Page Not Found");
+       done();
       });
     });
   });
