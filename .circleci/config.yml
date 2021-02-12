@@ -7,7 +7,7 @@ parameters:
   app-dir:
     type: string
     default: "."
-    description: TDD-Assignment1
+    description: ~/TDD-Assignment1
 workflows:
   matrix-tests:
     jobs:
