@@ -19,6 +19,7 @@ commands:
   test:
     steps:
       - checkout
+      appdir: ~/UFSurfClubWebDev/TDD-Assignment1/
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
