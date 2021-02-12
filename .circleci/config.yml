@@ -1,42 +1,9 @@
-version: 2.1
+version: 2
 jobs:
-  app-dir: ~/UFSurfClubWebDev/TDD-Assignment1/
-  node-v10:
+  build:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:7.10
+    working_directory: ~/UFSurfClubWebDev/TDD-Assignment/
     steps:
-      - test
-  node-v12:
-    docker:
-      - image: circleci/node:12
-    steps:
-      - test
-  node-v13:
-    docker:
-      - image: circleci/node:13
-    steps:
-      - test
-commands:
-  test:
-    steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-      - run:
-          name: install-dependancies
-          command: npm ci
-      - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-          paths:
-            - $HOME/.npm
-      - run:
-          name: unit test
-          command: |
-            npm run ci:test
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - node-v10
-      - node-v12
-      - node-v13
+      - run: npm install
+      - run: npm test
