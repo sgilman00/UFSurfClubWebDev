@@ -1,5 +1,6 @@
 version: 2.1
 jobs:
+  app-dir: ~/UFSurfClubWebDev/TDD-Assignment1/
   node-v10:
     docker:
       - image: circleci/node:10
@@ -19,7 +20,6 @@ commands:
   test:
     steps:
       - checkout
-      appdir: ~/UFSurfClubWebDev/TDD-Assignment1/
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
