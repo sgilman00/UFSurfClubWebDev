@@ -6,4 +6,5 @@ jobs:
     working_directory: ~/UFSurfClubWebDev/TDD-Assignment/
     steps:
       - run: npm install
+      - run: npm start
       - run: npm test
