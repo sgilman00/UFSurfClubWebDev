@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    docker:
+      - image: circleci/node:7.10
     working_directory: ~/UFSurfClubWebDev/TDD-Assignment/
     steps:
       - run: npm install
