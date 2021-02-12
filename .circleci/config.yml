@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
-    working_directory: ~/repo/TDD-Assignment
+    working_directory: ~/UFSurfClubWebDev/TDD-Assignment
     steps:
       - checkout
       - run: npm install
