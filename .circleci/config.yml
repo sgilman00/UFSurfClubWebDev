@@ -3,10 +3,8 @@ orbs: # declare what orbs we are going to use
 
 version: 2.1 # using 2.1 provides access to orbs and other features
 
-working_directory: ~/TDD-Assignment1
-steps:
-  - checkout:
-      path: ~/master/TDD-Assignment1/
+general:
+  build_dir: TDD-Assignment1/
       
 workflows:
   matrix-tests:
