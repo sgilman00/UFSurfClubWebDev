@@ -6,6 +6,16 @@ build:
     docker:
       - image: circleci/node:7.10
     working_directory: ~/UFSurfClubWebDev/TDD-Assignment1
+    steps:
+      # Checkout the code as the first step.
+      - checkout
+      # Next, the node orb's install-packages step will install the dependencies from a package.json.
+      # The orb install-packages step will also automatically cache them for faster future runs.
+      - node/install-packages:
+          pkg-manager: yarn
+      - run:
+          command: yarn test
+          name: Run YARN tests
 workflows:
   matrix-tests:
     jobs:
@@ -15,3 +25,5 @@ workflows:
           version: 12.16.0
       - node/test:
           version: 10.19.0
+
+ 
