@@ -12,3 +12,6 @@ workflows:
           version: 12.16.0
       - node/test:
           version: 10.19.0
+steps:
+       - node/install-packages:
+          app-dir: ~/TDD-Assignment1/TDD-Assignment
