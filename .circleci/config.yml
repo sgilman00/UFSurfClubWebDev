@@ -5,13 +5,13 @@ orbs:
 
 jobs:
   build:
-    working_directory: ~/TDD-Assignment1/TDD-Assignment/
+    working_directory: ~/TDD-Assignment1
     executor: node/default
     steps:
       - checkout
       - node/install-npm
       - node/install-packages:
-          app-dir: ~/TDD-Assignment1/TDD-Assignment/
+          app-dir: ~/TDD-Assignment1
       - persist_to_workspace:
           root: .
           paths:
