@@ -1,15 +1,10 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node:7.10
-    working_directory: ~/UFSurfClubWebDev/TDD-Assignment1
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
+orbs: # declare what orbs we are going to use	
+  node: circleci/node@2.0.2 # the node orb provides common node-related configuration 	
+version: 2.1 # using 2.1 provides access to orbs and other features	
 
-  workflows:
+working_directory: ~/UFSurfClubWebDev/TDD-Assignment1
+
+workflows:
   matrix-tests:
     jobs:
       - node/test:
