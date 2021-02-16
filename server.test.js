@@ -48,7 +48,7 @@ describe('UF Directory Server Unit Tests', function() {
           In the second, assert what we should  see.
           Finally, call "done();" to move on to the next test.
         */
-        assert(error, 'Error not recieved.');
+        assert(error, 'Error recieved.');
         assert(response, 'Response not recieved');
         done();
       });
