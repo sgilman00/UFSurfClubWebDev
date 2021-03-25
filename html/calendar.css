@@ -1,0 +1,74 @@
+body {
+    background-color: grey;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  header * {
+    display: inline;
+}
+  p {
+    color: red;
+  }
+  figure {
+    float: left;
+    width: 80%;
+    text-align: center;
+    font-style: normal;
+    font-size: larger;
+    text-indent: 0;
+    border: 5px black;
+    border-style: dashed;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  img{
+    float: center;
+    width: 50%;
+    text-align: center;
+    font-style: normal;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 5px;
+    padding: 0px;
+  }
+
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    font-size: large;
+    padding: 5px;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: blue;
+    color:white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: orangered;
+    color: white;
+  }
+  
+  table, th, td {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+  }
