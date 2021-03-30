@@ -35,6 +35,11 @@ body {
     padding: 0px;
   }
 
+  table, th, td {
+    margin: 5px;
+    padding: 5px;
+  }
+
   .topnav {
     background-color: #333;
     overflow: hidden;
