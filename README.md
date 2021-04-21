@@ -6,7 +6,9 @@ Link to GitHub: https://github.com/sgilman00/UFSurfClubWebDev
 Link to access site using an internet browser: https://ufsurf.herokuapp.com 
 
 To edit photos: 
+
 *DO NOT CHANGE FILE NAME or TYPE or the pictures will not work*
+
 President.jpg        Vice.jpg              Treasurer.jpg    
 Secretary.png        Team Captain.png      Socialmed1.png
 Socialmed2.jpg       Socialmed3.jpg
