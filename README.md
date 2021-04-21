@@ -2,6 +2,7 @@
 A website that is the hub for all information related to the UF Surf Club. Users can check announcements, view events, recommend events, contact the executive board, and more.
 
 Link to GitHub: https://github.com/sgilman00/UFSurfClubWebDev
+
 Link to access site using an internet browser: https://ufsurf.herokuapp.com 
 
 To edit photos: 
