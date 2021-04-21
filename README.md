@@ -9,9 +9,14 @@ To edit photos:
 
 *DO NOT CHANGE FILE NAME or TYPE or the pictures will not work*
 
-President.jpg        Vice.jpg              Treasurer.jpg    
-Secretary.png        Team Captain.png      Socialmed1.png
-Socialmed2.jpg       Socialmed3.jpg
+President.jpg        
+Vice.jpg              
+Treasurer.jpg    
+Secretary.png        
+Team Captain.png      
+Socialmed1.png
+Socialmed2.jpg       
+Socialmed3.jpg
 
 System Requirements
 *Internet connection is necessary.
