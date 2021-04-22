@@ -22,13 +22,13 @@ Use an up-to-date version of any Internet Browser (i.e. Google Chrome, Safari, o
 
 *DO NOT CHANGE FILE NAME or TYPE or the pictures will not work*
 
-President.jpg        
-Vice.jpg              
-Treasurer.jpg    
-Secretary.png        
-Team Captain.png      
-Socialmed1.png
-Socialmed2.jpg       
-Socialmed3.jpg
+president.png
+vice.png
+treasurer.jpeg
+secretary.png
+team captain.png
+socialmed1.png
+socialmed2.jpg
+socialmed3.png
 
-# To change text: 
+Login as admin using credentials provided and upload photos and descriptions as necessary.
