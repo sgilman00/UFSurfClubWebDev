@@ -23,7 +23,7 @@ constructor()
     return <Admin />;
   else
     return (<div>
-        <h1>Administrator Login</h1>
+        <h1 style={{textAlign:'center'}}>Administrator Login</h1>
           <Form loginChange={this.onLoginChange}/>
           </div>);
 }

@@ -6,7 +6,7 @@ import { Image, Button, Icon } from 'semantic-ui-react'
 import './myStyles.css'
 //import ReactDOM from 'react-dom'
 
-const pictures = ["s0.JPG", "s1.jpg", "s2.jpeg", "s3.jpeg", "s4.jpg", "s5.jpg"]
+const pictures = ["s0.JPG", "s1.JPG", "s2.JPEG", "s3.jpeg", "s4.JPG", "s5.JPG"]
 const limit = pictures.length - 1;
 
 class GalleryDisplayControl extends React.Component {
@@ -101,6 +101,10 @@ class GalleryDisplayControl extends React.Component {
         </div>
         {buttonRight}
       </div>
+      <footer>
+          <p>   Email us at: <a href="mailto: ufsurf@ufl.edu">ufsurf@ufl.edu</a>
+          </p>
+        </footer>
       </div>
     );
   }

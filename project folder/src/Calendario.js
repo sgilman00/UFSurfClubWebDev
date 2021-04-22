@@ -24,8 +24,8 @@ class Calendaro extends React.Component{
           </div>
         </div>
         <br />
-        <h1 styles={{textAlign: 'center'}}>Contact Us!</h1>
-        <p styles={{textAlign: 'center'}}> Fill out this form with any questions you have and we will work on getting answers back to you! </p>
+        <h1 className='buttons'>Contact Us!</h1>
+        <p className='buttons'> Fill out this form with any questions you have and we will work on getting answers back to you! </p>
         <div id="root"><ContactForm /></div>   
 
         <br />

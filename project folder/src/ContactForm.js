@@ -42,10 +42,10 @@ const ContactForm = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" required placeholder="Questions or Concerns?" />
       </div>
-   
+   <div style ={{textAlign: 'center'}}>
       <button type="submit">{status}</button>
       <button type="reset">Reset form</button>
-
+      </div>
     </form>
   );
 }

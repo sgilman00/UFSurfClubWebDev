@@ -82,7 +82,7 @@ body {
   .right-box{
     float:right;
     width: 150px;
-    padding:10px 10px 520px 0px;
+    padding:10px 10px 490px 0px;
     border: 2px solid rgb(20, 20, 20);
     border-top:0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -138,10 +138,8 @@ body {
   footer{
     position:absolute;
     padding:1px;
-    background-color:steelblue;
+    background-color:lightgrey;
     text-align:center;
-    left:0;
-    right:0;
     width: 100%;
   }
   

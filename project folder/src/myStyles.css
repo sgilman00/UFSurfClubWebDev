@@ -16,6 +16,9 @@
 
 .display-outline{
   outline: black dashed 5px;
+  height: 400px;
+  width: auto;
+  ;
 }
 
 .header-style{
@@ -25,7 +28,6 @@
   justify-content: center;
 }
 
-.photo{
-  height: 200px;
-  width: 200px;
+.image{
+  height:400px;
 }

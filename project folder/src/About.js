@@ -70,6 +70,7 @@ class About extends React.Component{
           <div className="header-section">
           </div>
         </div>
+        <h1 style={{textAlign:'center'}}>Meet our Executive Board!</h1>
         <div style={{overflowX: 'auto'}}>
           <table width="100%" style={{textAlign: 'center'}}>
             <tbody><tr style={{textAlign: 'center'}}> 
