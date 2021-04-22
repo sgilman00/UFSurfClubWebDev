@@ -1,0 +1,150 @@
+body {
+    background-color: rgba(248, 248, 248, 0.582);
+  }
+  
+  .header {
+  position: relative;
+  background-image: url("wave.jpeg");
+  background-position: center;
+  background-size:cover;
+  margin-bottom:0;
+  }
+  
+  .header-section {
+  background-image: url("uf-surf-club-logo.png");
+  background-repeat: no-repeat;
+  background-size:150px;
+  background-position-x: 70px;
+  position:relative;
+  padding: 50px 0 100px;
+  max-width:  700px;
+  margin-left:auto;
+  margin-right: auto;
+  color: white;
+  border:0;
+  margin:0;
+  }
+  
+  
+  ul {
+    
+    border-top:none;
+    list-style-type: none;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position:sticky;
+    margin-bottom:0;
+    margin-top:0;
+    border:0;
+    
+  }
+  
+  li{
+    float:left;
+    border-right: 1px solid #bbb;
+    
+  }
+  /*style of links inside navbar */
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 30px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  li a:hover{
+    background-color: rgb(48, 47, 47);
+  }
+  li:last-child{
+    border-right:none;
+    float:right;
+    
+  }
+  
+  
+  .left-box{
+    float: left;
+    width: 181px;
+    padding: 10px 10px 100px 10px;
+    border: 2px solid rgb(20, 20, 20);
+    border-top:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-right: 10px;
+    background-color:rgb(240, 240, 240);
+  }
+  
+  .right-box{
+    float:right;
+    width: 150px;
+    padding:10px 10px 520px 0px;
+    border: 2px solid rgb(20, 20, 20);
+    border-top:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-left:10px;
+    background-color:rgb(240, 240, 240);
+    
+    
+  }
+  
+  .fb-page{
+    margin-top:20px;
+    border-top:0px;
+  }
+  
+  .main-body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:100px;
+    font-size: 90%;
+  }
+  
+  .row {
+    display:flex;
+    flex-wrap:nowrap;
+    padding:0 4px;
+  }
+  .cont{
+    min-height:800px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 0%;
+    
+    padding: 0px 30px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 300px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+      padding:50%;
+    }
+  }
+  
+  footer{
+    position:absolute;
+    padding:1px;
+    background-color:steelblue;
+    text-align:center;
+    left:0;
+    right:0;
+    width: 100%;
+  }
+  
+  .active {
+    background-color: blue;
+  }

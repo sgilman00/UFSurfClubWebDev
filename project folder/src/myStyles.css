@@ -1,0 +1,31 @@
+.center-stuff{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  gap: 50px
+}
+
+.sheet{
+  background-size: cover;
+  background-image: url("./water_background.jpg");
+  height: 100vh;
+
+}
+
+.display-outline{
+  outline: black dashed 5px;
+}
+
+.header-style{
+  display: flex;
+  color: aqua;
+  text-shadow: 2px 2px black;
+  justify-content: center;
+}
+
+.photo{
+  height: 200px;
+  width: 200px;
+}

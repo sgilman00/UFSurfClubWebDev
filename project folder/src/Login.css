@@ -1,0 +1,212 @@
+body {
+  background-color: rgba(248, 248, 248, 0.582);
+}
+
+.header {
+position: relative;
+background-image: url("wave.jpeg");
+background-position: center;
+background-size:cover;
+margin-bottom:0;
+}
+
+.header-section {
+background-image: url("uf-surf-club-logo.png");
+background-repeat: no-repeat;
+background-size:150px;
+background-position-x: 70px;
+position:relative;
+padding: 50px 0 100px;
+max-width:  700px;
+margin-left:auto;
+margin-right: auto;
+color: white;
+border:0;
+margin:0;
+}
+
+
+ul {
+  
+  border-top:none;
+  list-style-type: none;
+  background-color: rgb(20, 20, 20);
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 0;
+  position:sticky;
+  margin-bottom:0;
+  margin-top:0;
+  border:0;
+  
+}
+
+li{
+  float:left;
+  border-right: 1px solid #bbb;
+  
+}
+/*style of links inside navbar */
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 30px;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+li a:hover{
+  background-color: rgb(48, 47, 47);
+}
+li:last-child{
+  border-right:none;
+  float:right;
+  
+}
+
+
+.left-box{
+  float: left;
+  width: 181px;
+  padding: 10px 10px 100px 10px;
+  border: 2px solid rgb(20, 20, 20);
+  border-top:0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-right: 10px;
+  background-color:rgb(240, 240, 240);
+}
+
+.right-box{
+  float:right;
+  width: 150px;
+  padding:10px 10px 63% 10px;
+  border: 2px solid rgb(20, 20, 20);
+  border-top:0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-left:10px;
+  background-color:rgb(240, 240, 240);
+  border-bottom:0px;
+  
+}
+
+.fb-page{
+  margin-top:20px;
+  border-top:0px;
+}
+
+.main-body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left:100px;
+  font-size: 90%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column {
+    display:none;
+  }
+}
+
+footer{
+  padding:5px;
+  background-color:steelblue;
+  text-align:center;
+  position:absolute;
+  width: 100%;
+}
+
+.active {
+  background-color: blue;
+}
+
+/* LOGIN PAGE CSS from https://www.w3schools.com/howto/howto_css_login_form.asp*/
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=time] {
+  padding: 3px 3px;
+  margin:3px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    }
+  
+
+/* Add a hover effect for buttons */
+button:hover {
+opacity: 0.5;
+}
+
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+width: 20%;
+border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+padding: 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+  display: block;
+  float: none;
+}
+}
+
